@@ -1,0 +1,41 @@
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color:black;
+  text-shadow: 1px 1px 0.5px black;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Coiny', sans-serif; 
+  background-color: lightblue;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+    font-size: 20px;
+    color: black;
+    width: 700px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+  }
+
+li {
+  font-size: 20px;
+  color: black;
+  width: 400px;
+  text-align: left;
+  letter-spacing: 1px;
+  margin: 0 auto;
+}
+
+body {
+  width:750px;
+  margin: 0 auto;
+  border: 3px solid black
+}

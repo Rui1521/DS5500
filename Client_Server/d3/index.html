@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rui Wang</title>
+<style>
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 3px 10px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    overflow: auto;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: blue;
+}
+
+.dropdown a:hover {background-color: lightblue;}
+.show {display: block;}
+
+path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+body{text-align:center} 
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+</style>
+</head>
+<body>
+<h1 align="center" style="font-family:verdana;">ROC Curve (Logistic Regression)</h1>
+<div id="chart"></div>
+<div class="dropdown">
+  <button onclick="Display()" class="dropbtn">Scaler</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#" onclick="Normalization()" class="dd1">Normalization</a>
+    <a href="#" onclick="Standardization()" class="dd1">Standardization</a>
+  </div>
+</div>
+<input type="number" id="C" placeholder="Parameter C">
+<button onclick="Visualization()">Visualize</button>
+<button onclick="update()">Update</button>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<br /><script src="scripts/main.js"></script>
+</body>
+</html>
+
